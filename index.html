@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#123c4a" />
+  <meta name="description" content="StemBudget — onderzoek hoe burgers publiek geld zouden verdelen. Een onafhankelijke, niet-bindende demonstratie." />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" type="image/svg+xml" href="./assets/icon.svg" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>StemBudget — Geef jouw belastinggeld een stem</title>
+</head>
+<body>
+  <a href="#inhoud" class="skip-link">Naar inhoud</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#verdelen" aria-label="StemBudget, naar start">
+        <img class="brand-logo" src="./assets/icon.svg" alt="" />
+        <span>stem<span class="brand-accent">budget</span><small>jouw geld, jouw stem</small></span>
+      </a>
+      <nav aria-label="Hoofdnavigatie" class="desktop-nav">
+        <a data-nav="verdelen" href="#verdelen">Verdelen</a>
+        <a data-nav="uitslagen" href="#uitslagen">Uitslagen</a>
+        <a data-nav="plannen" href="#plannen">Plannen</a>
+        <a data-nav="onderzoek" href="#onderzoek">Onderzoek</a>
+      </nav>
+      <div class="header-end"><span class="status-dot"></span><span>Onafhankelijk burgeronderzoek</span></div>
+    </div>
+  </header>
+  <main id="inhoud" class="page"></main>
+  <nav aria-label="Mobiele navigatie" class="mobile-nav">
+    <a data-nav="verdelen" href="#verdelen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h14M9 5v4m6 1v4m-4 1v4"/></svg><span>Verdelen</span></a>
+    <a data-nav="uitslagen" href="#uitslagen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9m5 11V5m5 15v-7m5 7V3"/></svg><span>Uitslagen</span></a>
+    <a data-nav="plannen" href="#plannen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span>Plannen</span></a>
+    <a data-nav="onderzoek" href="#onderzoek"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M7 17V8m5 9V4m5 13v-6"/></svg><span>Onderzoek</span></a>
+  </nav>
+  <footer class="site-footer">
+    <div><b>stem<span class="brand-accent">budget</span></b><span>Een eerste demonstratie van participatieve begroting.</span></div>
+    <div><span>Geen officiële verkiezing of belastingbetaling.</span><a href="#onderzoek">Privacy en onderzoek</a></div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
